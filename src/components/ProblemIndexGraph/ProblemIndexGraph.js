@@ -43,21 +43,37 @@ const IndexGraph = ({userSubmissions}) => {
     //     ],
     // };
     const data = {
-      labels: [],
-      datasets: [
-        {
-          label: 'Problem Count',
-          data: [],
-          backgroundColor: [
-            'rgba(52, 152, 219, 0.8)', // Light blue
-          ],
-          borderColor: [
-            'rgba(41, 128, 185, 1)', // Dark blue
-          ],
-          borderWidth: 2,
-        },
+  labels: [], // Add your labels here
+  datasets: [
+    {
+      label: 'Problem Count',
+      data: [], // Add your data here
+      backgroundColor: [
+        'rgba(52, 152, 219, 0.8)', // Light blue
+        'rgba(46, 204, 113, 0.8)', // Light green
+        'rgba(155, 89, 182, 0.8)', // Light purple
+        'rgba(241, 196, 15, 0.8)', // Light yellow
+        'rgba(231, 76, 60, 0.8)',  // Light red
       ],
-  };
+      borderColor: [
+        'rgba(41, 128, 185, 1)',  // Dark blue
+        'rgba(39, 174, 96, 1)',   // Dark green
+        'rgba(142, 68, 173, 1)',  // Dark purple
+        'rgba(243, 156, 18, 1)',  // Dark yellow
+        'rgba(192, 57, 43, 1)',   // Dark red
+      ],
+      borderWidth: 2,
+      hoverBackgroundColor: 'rgba(230, 126, 34, 0.9)', // Highlight on hover
+      hoverBorderColor: 'rgba(211, 84, 0, 1)', // Darker highlight border
+      hoverBorderWidth: 3,
+      shadowOffsetX: 2,
+      shadowOffsetY: 2,
+      shadowBlur: 5,
+      shadowColor: 'rgba(0, 0, 0, 0.3)',
+    },
+  ],
+};
+
   
     for(let[key,value] of indexAsc){
         data.labels.push(key);

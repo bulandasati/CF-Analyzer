@@ -11,7 +11,7 @@ const RatingGraph = ({userContest}) => {
             label: 'Rating',
             data: [],
             fill: false,
-            backgroundColor: 'rgb(228,28,28,1)',
+            backgroundColor: 'rgba(228,28,28,1)',
             borderColor: 'rgba(228,28,28,0.3)',
           },
         ],

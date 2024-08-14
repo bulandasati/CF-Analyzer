@@ -12,7 +12,6 @@ import { Link } from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-        
     },
     menuButton: {
         // marginRight: theme.spacing(2),
@@ -24,13 +23,13 @@ const useStyles = makeStyles((theme) => ({
     btn: {
         marginRight: 20,
         fontSize: 12,
-        color: 'white',
+        color: '#f0f0f0', // Updated text color
     },
     navLink : {
         textDecoration : 'none',
     },
     active: {
-        backgroundColor: 'red',
+        backgroundColor: '#444', // Changed to a darker grey to match the theme
         textDecoration : 'none',
     },
 }));
@@ -39,7 +38,7 @@ const Header = () => {
     const classes = useStyles();
     return (
         <div className={classes.root}>
-            <AppBar position="static">
+            <AppBar position="static" style={{ backgroundColor: '#2b2b2b' }}> {/* Updated background color */}
                 <Toolbar>
                     <Typography variant="h6" className={classes.title}>
                         Codeforces Analyzer
@@ -50,7 +49,7 @@ const Header = () => {
                             Single User
                         </Button>
                     </Link>
-                    <Link exact to="/Codeforces-Analyzer/versus"  className={classes.navLink}> 
+                    <Link exact to="/Codeforces-Analyzer/versus" className={classes.navLink}> 
                         <Button color="inherit" className={classes.btn}>
                             <PeopleIcon />
                             Versus
@@ -62,4 +61,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Header;

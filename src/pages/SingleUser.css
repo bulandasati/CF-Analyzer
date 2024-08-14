@@ -32,9 +32,9 @@
 
 .pie-chart-component {
   width: 35vw;
-  background-color: powderblue;
+  background-color: rgb(251, 252, 253);
   border-radius: 10px;
-  border: 1px dashed black;
+  border: 2px solid rgb(0, 0, 0);
 }
 @media only screen and (max-width: 675px) {
   .pie-chart {
@@ -58,7 +58,7 @@
 }
 .user-bio-component {
   width: 38vw;
-  border: 1px dashed black;
+  border: 2px solid rgb(0, 0, 0);
 }
 
 @media only screen and (max-width: 675px) {
@@ -76,9 +76,9 @@
   margin-left: 10vw;
   width: 80vw;
   margin-top: 2vh;
-  background-color: powderblue;
+  background-color: white;
   border-radius: 10px;
-  border: 1px dashed black;
+  border: 2px solid rgb(0, 0, 0);
 }
 
 .last{
@@ -88,8 +88,10 @@
 
 /* Individual components */
 .table-head{
-  background-color: plum !important;
+  background-color:rgb(214, 222, 125);
+  color: rgb(138, 187, 31);
+  
 }
 .table-body{
-  background-color: powderblue;
+  background-color:white;
 }

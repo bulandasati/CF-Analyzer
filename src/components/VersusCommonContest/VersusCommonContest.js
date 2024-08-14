@@ -86,7 +86,7 @@ const VersusCommonContest = ({ userContest1, userContest2 }) => {
                                 <TableCell
                                     key={column.id}
                                     align={column.align}
-                                    style={{ backgroundColor: "#8ba3cf" }}
+                                    style={{ backgroundColor: "#D6DE7D" }}
                                     // style={{ minWidth: column.minWidth }}
                                 >
                                     {column.label}
@@ -99,7 +99,7 @@ const VersusCommonContest = ({ userContest1, userContest2 }) => {
                         {rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map((row) => {
                             return (
                                 
-                                <TableRow key={row.name} style={row.diff>0 ? {backgroundColor: "rgb(201 177 207)"} : {backgroundColor: "#f0d6f6"}}>
+                                <TableRow key={row.name} style={row.diff>0 ? {backgroundColor: "#8DE8F0"} : {backgroundColor: "#F0E6DF"}}>
                                     <TableCell component="th" scope="row">
                                         {row.name}
                                     </TableCell>
