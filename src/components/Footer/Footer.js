@@ -3,7 +3,7 @@ const Footer = () => {
     return (
         <footer className="footer">
             <span>
-                Developed by <a href="https://codeforces.com/profile/srinjoy_ray"  target="_blank">Srinjoy Ray</a>
+            &copy; <a href="https://codeforces.com/profile/luffy___ace"  target="_blank">Ashish Kumar Yadav</a>
             </span>
         </footer>
     )

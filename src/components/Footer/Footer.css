@@ -1,11 +1,11 @@
 .footer{
     margin: auto;
-    background-color: black;
+    background-color: powderblue;
     color:white;
     text-align: center;
     padding-bottom: 4px;
 }
 .footer a{
     text-decoration: none;
-    color:white;
+    color:white
 }

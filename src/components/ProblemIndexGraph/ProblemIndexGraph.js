@@ -26,22 +26,39 @@ const IndexGraph = ({userSubmissions}) => {
     }
     
     var indexAsc = new Map([...index.entries()].sort());
+    // const data = {
+    //     labels: [],
+    //     datasets: [
+    //       {
+    //         label: 'Problem Count',
+    //         data: [],
+    //         backgroundColor: [
+    //           'rgba(228, 28, 28, 0.8)',
+    //         ],
+    //         borderColor: [
+    //           'rgba(228, 28, 28, 1)',
+    //         ],
+    //         borderWidth: 2,
+    //       },
+    //     ],
+    // };
     const data = {
-        labels: [],
-        datasets: [
-          {
-            label: 'Problem Count',
-            data: [],
-            backgroundColor: [
-              'rgba(228, 28, 28, 0.8)',
-            ],
-            borderColor: [
-              'rgba(228, 28, 28, 1)',
-            ],
-            borderWidth: 2,
-          },
-        ],
-    };
+      labels: [],
+      datasets: [
+        {
+          label: 'Problem Count',
+          data: [],
+          backgroundColor: [
+            'rgba(52, 152, 219, 0.8)', // Light blue
+          ],
+          borderColor: [
+            'rgba(41, 128, 185, 1)', // Dark blue
+          ],
+          borderWidth: 2,
+        },
+      ],
+  };
+  
     for(let[key,value] of indexAsc){
         data.labels.push(key);
         data.datasets[0].data.push(value);

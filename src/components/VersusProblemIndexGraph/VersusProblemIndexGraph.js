@@ -60,10 +60,10 @@ const VersusProblemIndexGraph = ({userSubmissions1,userSubmissions2,username1,us
             label: username1,
             data: [],
             backgroundColor: [
-              'red',
+              'green',
             ],
             borderColor: [
-              'rgba(255, 99, 132, 1)',
+              'green',
             ],
             borderWidth: 2,
           },
@@ -71,16 +71,17 @@ const VersusProblemIndexGraph = ({userSubmissions1,userSubmissions2,username1,us
             label: username2,
             data: [],
             backgroundColor: [
-              'blue',
+              'red',
             ],
             borderColor: [
-              'rgba(255, 99, 132, 1)',
+              'red',
             ],
             borderWidth: 2,
           },
         ],
     };
 
+    
     
     var indexAsc = new Map([...index.entries()].sort());
 

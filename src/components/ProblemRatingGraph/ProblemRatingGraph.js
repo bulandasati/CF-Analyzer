@@ -32,22 +32,39 @@ const ProblemRatingGraph = ({userSubmissions}) => {
         else if (parseInt(key1) > parseInt(key2)) return +1;
         else return 0;
     }));
+    // const data = {
+    //     labels: [],
+    //     datasets: [
+    //       {
+    //         label: 'Problem Count',
+    //         data: [],
+    //         backgroundColor: [
+    //           'rgba(228, 28, 28, 0.8)',
+    //         ],
+    //         borderColor: [
+    //           'rgba(228, 28, 28, 1)',
+    //         ],
+    //         borderWidth: 2,
+    //       },
+    //     ],
+    // };
     const data = {
-        labels: [],
-        datasets: [
-          {
-            label: 'Problem Count',
-            data: [],
-            backgroundColor: [
-              'rgba(228, 28, 28, 0.8)',
-            ],
-            borderColor: [
-              'rgba(228, 28, 28, 1)',
-            ],
-            borderWidth: 2,
-          },
-        ],
-    };
+      labels: [],
+      datasets: [
+        {
+          label: 'Problem Count',
+          data: [],
+          backgroundColor: [
+            'rgba(46, 204, 113, 0.8)', // Light green
+          ],
+          borderColor: [
+            'rgba(39, 174, 96, 1)', // Dark green
+          ],
+          borderWidth: 2,
+        },
+      ],
+  };
+  
     for(let[key,value] of ratingAsc){
         data.labels.push(key);
         data.datasets[0].data.push(value);
